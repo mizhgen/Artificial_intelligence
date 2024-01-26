@@ -1,0 +1,10 @@
+version: '1.0'
+name: pytorch_server
+
+services:
+  pythotch:
+    restart: unless-stopped
+    image: cat2:0.1
+    volumes:
+      - C:\artificial_intelligence\lab_2\lab_task_2:/usr/app/src
+    command: python3 /usr/app/src/cat2.py
